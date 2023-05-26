@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+    <!-- METADATA -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quote Generator</title>
+    
+    <!-- CSS & JS -->
     <link rel="stylesheet" href="style.css">
-    <script src="Main.js" defer></script>
+    <script src="/main.js" defer></script>
+
+    <!-- Data on Browser Tab -->
+    <title>Attack On Titan</title>
 </head>
 <body>
-    <div class="container">
-        <div class="quote">
-            <p id="quoteText">" Imagination is greater than knowledge "</p>
-            <h3 id="quoteAuthor"> - Einstein</h3>
+    <span>
+        <h1>Attack On Titan Quotes</h1>
+        <p>
+            Click button to get quote said by character.
+        </p>
+    </span>
+    <div>
+        <div class="btns">
+            <button class="btn btn1" id="eren" onclick="erenSaid()">Eren Yeager</button>
+            <!-- onclick="buttonFunc()" -->
+            <button class="btn btn2" id="mikasa" onclick="mikasaSaid()"> Mikasa Ackerman </button>
+            <button class="btn btn3" id="levi" onclick="leviSaid()">Levi Ackerman</button>
+            <button class="btn btn4" id="armin" id="levi" onclick="arminSaid()">Armin Arlert</button>
+            <button class="btn btn4" id="erwin" onclick="erwinSaid()">Erwin Smith</button>
         </div>
-        <div class="btns" type="button"> 
-            <button class="generator">Generate Quote</button>
-        </div>
-        <div class="image-box">
-            <img src="Plain.jpg">
-        </div>
+    </div>
+    <div class="quote" id="quote">
+        <p id="quoteTxt">
+            "Quote will display here".
+        </p>
     </div>
 </body>
 </html>
